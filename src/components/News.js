@@ -6,7 +6,8 @@ import Spiner from './Spiner'
 export class News extends Component {
 static defaultProps = {
   country:'',
-  pageSize:6,
+  pageSize: 6,
+  category: 'general'
 }
   
   static propTypes = {
@@ -78,7 +79,7 @@ handleNextClick = async ()=>{
         {!this.state.loading && this.state.articles.map((element)=>{
 
           return <div className="col-md-4" key={element.url}>
-          <NewsItem title={element.title?element.title.slice(0,30):""} description ={element.description?element.description.slice(0,88) : ""} imgUrl={!element.urlToImage?"https://media.istockphoto.com/photos/news-sign-on-wall-picture-id1294294064?b=1&k=20&m=1294294064&s=170667a&w=0&h=2A1-Cr76gN_iVS0nYS0AY2ozi9CEuNLt3DMRV__LxnY=":element.urlToImage} newsUrl={element.url}/>
+          <NewsItem title={element.title?element.title:""} description ={element.description?element.description: ""} imgUrl={!element.urlToImage?"https://media.istockphoto.com/photos/news-sign-on-wall-picture-id1294294064?b=1&k=20&m=1294294064&s=170667a&w=0&h=2A1-Cr76gN_iVS0nYS0AY2ozi9CEuNLt3DMRV__LxnY=":element.urlToImage} newsUrl={element.url}/>
         </div>
         })} 
           

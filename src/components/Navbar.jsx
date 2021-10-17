@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
+import {
+
+  NavLink
+} from "react-router-dom";
+
 
 export class Navbar extends Component {
   // static propTypes = {};
@@ -9,9 +14,9 @@ export class Navbar extends Component {
         <div className="NavbarHeader">
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container-fluid">
-              <a className="navbar-brand" href="/">
+              <NavLink className="navbar-brand" to="/">
                 Spider News
-              </a>
+              </NavLink>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -29,44 +34,44 @@ export class Navbar extends Component {
               >
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/">
+                    <NavLink className="nav-link"  activeClassName="act" exact to="/">
                       Home
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <NavLink className="nav-link" activeClassName="act"  exact to="/business">
                     Business
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <NavLink className="nav-link" activeClassName="act" exact to="/entertainment">
                     Entertainment
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <NavLink className="nav-link" activeClassName="act" exact to="/health">
                     Health
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <NavLink className="nav-link" activeClassName="act" exact to="/science">
                       Science
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <NavLink className="nav-link" activeClassName="act" exact to="/sports">
                       Sports
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <NavLink className="nav-link" activeClassName="act" exact to="/technology">
                       Tecnology
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <NavLink className="nav-link" activeClassName="act" exact to="/about">
                       About
-                    </a>
+                    </NavLink>
                   </li>
                   
                 </ul>

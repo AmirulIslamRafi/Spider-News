@@ -12,7 +12,7 @@ export class NewsItem extends Component {
         <div className="card my-3">
             <img src={imgUrl} className="card-img-top img" alt="..." />
           <div className="card-body  p-5">
-            <h5 className="card-title">{title}...</h5>
+            <h5 className="card-title">{title}</h5>
             <p className="card-text">
               {description}...
             </p>
