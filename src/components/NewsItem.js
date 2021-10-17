@@ -9,14 +9,14 @@ export class NewsItem extends Component {
     let {title, description, imgUrl, newsUrl} = this.props;
     return (
       <>
-        <div className="card my-3" style={{width: "18rem"}}>
-            <img src={imgUrl} className="card-img-top" alt="..." />
+        <div className="card my-3">
+            <img src={imgUrl} className="card-img-top img" alt="..." />
           <div className="card-body  p-5">
-            <h5 className="card-title">{title}</h5>
+            <h5 className="card-title">{title}...</h5>
             <p className="card-text">
-              {description}
+              {description}...
             </p>
-            <a href={newsUrl} target="_blank" className="btn btn-sm btn-dark">
+            <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sm btn-dark">
                Read More
             </a>
           </div>

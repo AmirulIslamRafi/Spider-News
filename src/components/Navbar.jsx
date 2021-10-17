@@ -7,7 +7,7 @@ export class Navbar extends Component {
     return (
       <>
         <div className="NavbarHeader">
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container-fluid">
               <a className="navbar-brand" href="/">
                 Spider News
@@ -35,44 +35,40 @@ export class Navbar extends Component {
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="/">
-                      Link
+                    Business
                     </a>
                   </li>
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="/"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      News
+                  <li className="nav-item">
+                    <a className="nav-link" href="/">
+                    Entertainment
                     </a>
-                    <ul
-                      className="dropdown-menu"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li>
-                        <a className="dropdown-item" href="/">
-                          Buiness News
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="/">
-                          Scince &amp; Tecnology
-                        </a>
-                      </li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="/">
-                           Education
-                        </a>
-                      </li>
-                    </ul>
                   </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/">
+                    Health
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/">
+                      Science
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/">
+                      Sports
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/">
+                      Tecnology
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/">
+                      About
+                    </a>
+                  </li>
+                  
                 </ul>
                 <form className="d-flex">
                   <input
@@ -81,7 +77,7 @@ export class Navbar extends Component {
                     placeholder="Search"
                     aria-label="Search"
                   />
-                  <button className="btn btn-outline-success" type="submit">
+                  <button className="btn btn-outline-light" type="submit">
                     Search
                   </button>
                 </form>

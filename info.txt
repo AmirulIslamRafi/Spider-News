@@ -1,0 +1,6 @@
+category= business, entertainment, general, health, science, sports, technology.
+language =  en, ar, de, es, fr, he, it, nl, no, pt, ru, se, ud, zh.
+
+rules =  %20
+
+
